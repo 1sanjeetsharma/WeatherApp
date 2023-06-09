@@ -1,0 +1,43 @@
+.card {
+  /* display: inline-block; */
+  margin: 10px;
+  overflow: hidden;
+  /* height: 300px;
+  width: 400px; */
+}
+.option {
+  display: none;
+  transition: 0.5s;
+}
+.card:hover .option {
+  /* font-size: px; */
+  position: absolute;
+  left: 15%;
+  top: 36%;
+  display: flex;
+  justify-content: space-around;
+  transition: 0.5s;
+}
+.card:hover {
+}
+.option > button {
+  border: none;
+  font-size: 50px;
+  border-radius: 50%;
+  margin: 20px;
+  background: #fff;
+  box-shadow: 0 0 500px 50px #ccc;
+  /* box-shadow: 5px 5px 500px rgb(98, 99, 99); */
+}
+.option > .delete:hover {
+  color: red;
+  transition: 0.25s;
+}
+.option > .reload:hover {
+  color: green;
+  transition: 0.25s;
+}
+.option > button > i {
+  padding: 5px;
+  margin: 5px;
+}
